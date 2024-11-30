@@ -6,6 +6,12 @@ export class BeltGuard implements CanActivate {
   canActivate(
     context: ExecutionContext,
   ): boolean | Promise<boolean> | Observable<boolean> {
+    // example :
+    // const request = context.switchToHttp().getRequest();
+    // validate request
+    // const hasBlackBelt = request.user.belts.includes('black');
+    // return hasBlackBelt;
+
     return true;
   }
 }
